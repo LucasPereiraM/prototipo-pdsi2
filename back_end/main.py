@@ -26,7 +26,7 @@ app.add_middleware (
 
 @app.get("/")
 def read_root():
-    return {"Hello": "lala"}
+    return {"Hello": "lalalalalalala"}
 
 @app.get("/quadrado/{num}")
 def square(num: int):
