@@ -30,7 +30,7 @@ def read_root():
 
 @app.get("/quadrado/{num}")
 def square(num: int):
-    return num ** 2
+    return num ** 3
 
 @app.get("/mensagens", response_model=List[classes.Mensagem], status_code=status.HTTP_200_OK)
 async def buscar_valores(db: Session = Depends(get_db), skip: int = 0, limit: int =100):
