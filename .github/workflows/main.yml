@@ -11,8 +11,8 @@ jobs:
         image: postgres:13
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: admin
-          POSTGRES_DB: nome_database
+          POSTGRES_PASSWORD: 12345
+          POSTGRES_DB: database
         ports:
           - 5432:5432
 
