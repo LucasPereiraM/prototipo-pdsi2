@@ -60,7 +60,6 @@ async def coletar_dados(db: Session = Depends(get_db)):
 
         db.commit()
         return {"message": "Dados coletados e armazenados com sucesso!", "dados": dados_coletados}
-
     except Exception as e:
         db.rollback()
         return {"error": str(e)}
